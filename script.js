@@ -110,7 +110,7 @@
     }
   }
 
-  /* ---------- 6.5 Filter chip active state ---------- */
+  /* ---------- 6.5 Filter chip active state + label sync ---------- */
   const filterPills = document.querySelector('.filter-pills');
   if (filterPills) {
     const allChip = filterPills.querySelector('.chip[data-filter="all"]');
@@ -118,12 +118,22 @@
 
     allChip?.addEventListener('click', () => {
       allChip.classList.add('chip-active');
-      dropdowns.forEach(s => s.selectedIndex = 0);
+      dropdowns.forEach(s => {
+        s.selectedIndex = 0;
+        const label = s.parentElement.querySelector('.chip-label');
+        if (label) label.textContent = s.dataset.default;
+      });
     });
 
     dropdowns.forEach(sel => {
       sel.addEventListener('change', () => {
-        if (sel.selectedIndex > 0) allChip?.classList.remove('chip-active');
+        const label = sel.parentElement.querySelector('.chip-label');
+        if (sel.selectedIndex > 0) {
+          if (label) label.textContent = sel.options[sel.selectedIndex].textContent;
+          allChip?.classList.remove('chip-active');
+        } else {
+          if (label) label.textContent = sel.dataset.default;
+        }
       });
     });
   }
