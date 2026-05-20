@@ -110,6 +110,24 @@
     }
   }
 
+  /* ---------- 6.5 Filter chip active state ---------- */
+  const filterPills = document.querySelector('.filter-pills');
+  if (filterPills) {
+    const allChip = filterPills.querySelector('.chip[data-filter="all"]');
+    const dropdowns = filterPills.querySelectorAll('.chip-select select');
+
+    allChip?.addEventListener('click', () => {
+      allChip.classList.add('chip-active');
+      dropdowns.forEach(s => s.selectedIndex = 0);
+    });
+
+    dropdowns.forEach(sel => {
+      sel.addEventListener('change', () => {
+        if (sel.selectedIndex > 0) allChip?.classList.remove('chip-active');
+      });
+    });
+  }
+
   /* ---------- 7. Pagination active state ---------- */
   const pagination = document.querySelector('.pagination');
   if (pagination) {
