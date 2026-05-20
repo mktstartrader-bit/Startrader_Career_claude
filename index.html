@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="STARTRADER Careers — Carve your path to success with STARTRADER. Explore open positions, our culture, and what makes us different." />
+  <title>STARTRADER Careers — Carve your path to success</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/Images/StarCareerLogo.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="STARTRADER Careers home">
+        <img src="assets/Images/StarCareerLogo.svg" alt="STARTRADER Careers" />
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" class="nav-link active">HOME</a></li>
+          <li><a href="starscout.html" class="nav-link">STARSCOUT</a></li>
+          <li><a href="#about" class="nav-link">ABOUT US</a></li>
+          <li><a href="#starlife" class="nav-link">STARLIFE</a></li>
+          <li><a href="#starsocial" class="nav-link">STARSOCIAL</a></li>
+          <li><a href="#starblog" class="nav-link">STARBLOG</a></li>
+        </ul>
+      </nav>
+
+      <a href="starscout.html" class="btn btn-primary join-btn">Join Us</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="starscout.html">STARSCOUT</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#starlife">STARLIFE</a></li>
+        <li><a href="#starsocial">STARSOCIAL</a></li>
+        <li><a href="#starblog">STARBLOG</a></li>
+        <li><a href="starscout.html" class="btn btn-primary">Join Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <img class="hero-img" src="assets/Images/BannerImage.png" alt="STARTRADER team collaborating" />
+    </div>
+    <div class="container hero-content">
+      <h1 class="hero-title reveal">
+        Carve your path to success<br />with <span class="hero-brand">STARTRADER</span>
+      </h1>
+      <div class="hero-rule reveal" aria-hidden="true"></div>
+      <a href="#starstory" class="btn btn-ghost hero-cta reveal">Explore, Evolve, Extend</a>
+    </div>
+  </section>
+
+  <!-- ============ BANNER VIDEO STRIP ============ -->
+  <section class="video-strip" aria-label="Brand video">
+    <video
+      class="brand-video"
+      id="brandVideo"
+      src="assets/Videos/CP REBRANDED BANNER VIDEO I1920x1080(1).mp4"
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+    <button class="video-control" id="videoControl" aria-label="Play video">
+      <svg class="icon-play" viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg class="icon-pause" viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true">
+        <path d="M6 5h4v14H6zM14 5h4v14h-4z"/>
+      </svg>
+    </button>
+  </section>
+
+  <!-- ============ STARSTORY ============ -->
+  <section class="starstory" id="starstory">
+    <div class="container">
+      <div class="starstory-head">
+        <div class="pill reveal"><span class="pill-dot"></span>STARSTORY</div>
+        <div class="starstory-copy">
+          <h2 class="section-title reveal">STARSTORY</h2>
+          <p class="section-lede reveal">
+            Every great venture starts with a simple idea. Ours was to demystify trading and
+            empower individuals worldwide to achieve financial independence, and we grew
+            to become a globally-leading broker.
+          </p>
+        </div>
+      </div>
+
+      <div class="story-grid">
+        <a href="starscout.html" class="story-card reveal" data-delay="0">
+          <h3>STARSCOUT</h3>
+          <span class="card-rule"></span>
+          <p>Explore open positions and take the next step in your career with STARTRADER.</p>
+          <span class="card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#about" class="story-card reveal" data-delay="80">
+          <h3>ABOUT US</h3>
+          <span class="card-rule"></span>
+          <p>Learn more about the team, vision, and values driving STARTRADER's journey.</p>
+          <span class="card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#starlife" class="story-card reveal" data-delay="160">
+          <h3>STARLIFE</h3>
+          <span class="card-rule"></span>
+          <p>Have a look at our vibrant culture, events, and behind-the-scenes moments at STARTRADER.</p>
+          <span class="card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#starsocial" class="story-card story-card--wide reveal" data-delay="240">
+          <h3>STARSOCIAL</h3>
+          <span class="card-rule"></span>
+          <p>Explore STARTRADER's initiatives to support communities and create lasting impact.</p>
+          <span class="card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#starblog" class="story-card story-card--wide reveal" data-delay="320">
+          <h3>STARBLOG</h3>
+          <span class="card-rule"></span>
+          <p>Dive into insights, stories, and updates, from market trends to team moments and event highlights.</p>
+          <span class="card-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CEO MESSAGE ============ -->
+  <section class="ceo" id="about">
+    <div class="ceo-bg" aria-hidden="true">
+      <img src="assets/Images/peterBackground.png" alt="" />
+    </div>
+    <div class="container ceo-inner">
+      <div class="ceo-photo reveal">
+        <img src="assets/Images/PeterImage.png" alt="Mr. Peter Karsten, CEO of STARTRADER" />
+      </div>
+      <div class="ceo-copy">
+        <h2 class="ceo-title reveal">Our CEO's message to the people</h2>
+        <p class="ceo-subtitle reveal">Mr. Peter Karsten, CEO of STARTRADER</p>
+        <p class="ceo-quote reveal">
+          "Great platforms are built by great people — and at STARTRADER, we're proud to build
+          the kind of place where talent grows, leaders rise, and every contribution counts."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM PURPOSE ============ -->
+  <section class="purpose" id="starlife">
+    <div class="container purpose-inner">
+      <div class="purpose-left">
+        <div class="pill light reveal"><span class="pill-dot"></span>WHO WE ARE</div>
+        <h2 class="purpose-title reveal">A team that moves with<br />purpose</h2>
+        <div class="purpose-image reveal">
+          <img src="assets/Images/TeamPurpose.png" alt="STARTRADER team at work" />
+        </div>
+      </div>
+
+      <div class="purpose-right">
+        <p class="purpose-lede reveal">
+          At STARTRADER, everyone plays a part in shaping how we grow: from the developers
+          behind our platforms to the people who guide and support our clients every day.
+        </p>
+
+        <div class="purpose-row reveal">
+          <h4>What we believe</h4>
+          <p>A strong company culture starts with listening, trust, and the freedom to contribute in meaningful ways.</p>
+        </div>
+        <div class="purpose-divider"></div>
+        <div class="purpose-row reveal">
+          <h4>What we're building</h4>
+          <p>An environment where collaboration leads, growth is shared, and every effort is respected.</p>
+        </div>
+
+        <a href="starscout.html" class="btn btn-white purpose-cta reveal">Know More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta" id="join">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-bg" aria-hidden="true">
+          <img src="assets/Images/footerBackground.svg" alt="" />
+        </div>
+        <div class="cta-copy">
+          <h2>Your next big opportunity<br />is closer than you think!</h2>
+          <a href="starscout.html" class="btn btn-primary">Find It Now</a>
+        </div>
+        <div class="cta-people">
+          <img src="assets/Images/fotterImage.png" alt="STARTRADER team members" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand" href="#home" aria-label="STARTRADER Careers home">
+          <img src="assets/Images/StarCareerLogo.svg" alt="STARTRADER Careers" />
+        </a>
+        <div class="footer-divider"></div>
+        <ul class="footer-socials" aria-label="Social media">
+          <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.9.3-1.5 1.6-1.5H17V4.3C16.6 4.2 15.5 4 14.3 4 11.9 4 10.2 5.5 10.2 8.2v2.3H7.5v3h2.7V21h3.3z"/></svg></a></li>
+          <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M6.5 8.5a1.7 1.7 0 110-3.4 1.7 1.7 0 010 3.4zM5 10h3v10H5V10zm5 0h2.9v1.4h.04c.4-.75 1.4-1.55 2.86-1.55 3.06 0 3.62 2 3.62 4.7V20H16.5v-4.6c0-1.1-.02-2.5-1.55-2.5-1.55 0-1.79 1.2-1.79 2.42V20H10V10z"/></svg></a></li>
+          <li class="social-blue"><a href="#" aria-label="X"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.5 3h3l-6.6 7.6L22 21h-6.1l-4.8-6.3L5.6 21H2.5l7.1-8.1L2 3h6.2l4.3 5.7L17.5 3zm-1.1 16h1.7L7.7 5H6L16.4 19z"/></svg></a></li>
+          <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M21.6 7.2c-.2-.9-.9-1.6-1.8-1.8C18.1 5 12 5 12 5s-6.1 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 9 2 12 2 12s0 3 .4 4.8c.2.9.9 1.6 1.8 1.8C5.9 19 12 19 12 19s6.1 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.8.4-4.8.4-4.8s0-3-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a></li>
+          <li><a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M21.5 4.2 2.8 11.3c-1 .4-1 1 .2 1.4l4.7 1.5 1.8 5.7c.2.7.4.9 1 .6l3-2.5 4.6 3.4c.8.5 1.4.2 1.6-.7l2.9-13.7c.3-1.2-.4-1.7-1.1-1.4z"/></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <ul class="footer-links">
+          <li><a href="starscout.html" class="active">STARSCOUT</a></li>
+          <li><a href="#starlife">STARLIFE</a></li>
+          <li><a href="#starsocial">STARSOCIAL</a></li>
+          <li><a href="#staracedemy">STARACEDEMY</a></li>
+          <li><a href="#starblog">STARBLOG</a></li>
+        </ul>
+        <a href="#" class="footer-policy">PRIVACY &amp; POLICY</a>
+      </div>
+
+      <p class="copyright">©2026 STARTRADER CAREERS. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

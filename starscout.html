@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="STARSCOUT — Our job openings. Your next big career move starts here. Explore open positions at STARTRADER." />
+  <title>STARSCOUT — STARTRADER Careers</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/Images/StarCareerLogo.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-starscout">
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="STARTRADER Careers home">
+        <img src="assets/Images/StarCareerLogo.svg" alt="STARTRADER Careers" />
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="starscout.html" class="nav-link active">STARSCOUT</a></li>
+          <li><a href="index.html#about" class="nav-link">ABOUT US</a></li>
+          <li><a href="index.html#starlife" class="nav-link">STARLIFE</a></li>
+          <li><a href="index.html#starsocial" class="nav-link">STARSOCIAL</a></li>
+          <li><a href="index.html#starblog" class="nav-link">STARBLOG</a></li>
+        </ul>
+      </nav>
+
+      <a href="#talent-pool" class="btn btn-primary join-btn">Join Us</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="starscout.html" class="active">STARSCOUT</a></li>
+        <li><a href="index.html#about">ABOUT US</a></li>
+        <li><a href="index.html#starlife">STARLIFE</a></li>
+        <li><a href="index.html#starsocial">STARSOCIAL</a></li>
+        <li><a href="index.html#starblog">STARBLOG</a></li>
+        <li><a href="#talent-pool" class="btn btn-primary">Join Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ OUR JOB OPENINGS ============ -->
+  <section class="jobs-section" id="jobs">
+    <div class="container">
+      <header class="jobs-header reveal">
+        <h1 class="jobs-title">Our job openings</h1>
+        <p class="jobs-subtitle">Your next big career move starts here. Be part of something great!</p>
+      </header>
+
+      <!-- Filter bar -->
+      <div class="filter-bar reveal" role="region" aria-label="Job filters">
+        <button class="filter-trigger" type="button">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 5h18M6 12h12M10 19h4"/>
+          </svg>
+          Filter
+        </button>
+
+        <div class="filter-controls">
+          <label class="filter-select">
+            <select aria-label="Departments">
+              <option>Departments</option>
+              <option>Engineering</option>
+              <option>Sales</option>
+              <option>Design</option>
+              <option>Marketing</option>
+              <option>Operations</option>
+              <option>Customer Support</option>
+            </select>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </label>
+
+          <label class="filter-select">
+            <select aria-label="Locations">
+              <option>Locations</option>
+              <option>Malaysia</option>
+              <option>China</option>
+              <option>Dubai</option>
+              <option>Singapore</option>
+              <option>United Kingdom</option>
+            </select>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </label>
+
+          <label class="filter-select">
+            <select aria-label="Job Types">
+              <option>Job Types</option>
+              <option>Full Time</option>
+              <option>Part Time</option>
+              <option>Contract</option>
+              <option>Internship</option>
+            </select>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </label>
+        </div>
+      </div>
+
+      <!-- Jobs layout: talent pool + job rows -->
+      <div class="jobs-grid">
+
+        <!-- Talent pool card -->
+        <aside class="talent-pool reveal" id="talent-pool">
+          <div class="talent-pool-inner">
+            <h3>Our talent pool</h3>
+            <p class="talent-hook">Your dream job isn't listed? No worries!</p>
+            <p class="talent-desc">Share your CV and stay in our talent orbit for future missions.</p>
+            <a href="#" class="btn btn-white talent-cta">Apply Now!</a>
+          </div>
+        </aside>
+
+        <!-- Job rows -->
+        <ul class="job-list" id="jobList">
+          <li class="job-row reveal" data-delay="0">
+            <span class="job-title">Customer Support Expert</span>
+            <span class="job-tags">
+              <span class="tag tag-time"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>Part Time</span>
+              <span class="tag tag-loc"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-7-8-7-13a7 7 0 0 1 14 0c0 5-7 13-7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>Malaysia</span>
+            </span>
+            <a href="#" class="job-view">View Job <span aria-hidden="true">→</span></a>
+          </li>
+
+          <li class="job-row reveal" data-delay="60">
+            <span class="job-title">Sales Executive</span>
+            <span class="job-tags">
+              <span class="tag tag-time"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>Full Time</span>
+              <span class="tag tag-loc"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-7-8-7-13a7 7 0 0 1 14 0c0 5-7 13-7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>China</span>
+            </span>
+            <a href="#" class="job-view">View Job <span aria-hidden="true">→</span></a>
+          </li>
+
+          <li class="job-row reveal" data-delay="120">
+            <span class="job-title">Product designer</span>
+            <span class="job-tags">
+              <span class="tag tag-time"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>Part Time</span>
+              <span class="tag tag-loc"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-7-8-7-13a7 7 0 0 1 14 0c0 5-7 13-7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>Dubai</span>
+            </span>
+            <a href="#" class="job-view">View Job <span aria-hidden="true">→</span></a>
+          </li>
+
+          <li class="job-row reveal" data-delay="180">
+            <span class="job-title">Sales Executive</span>
+            <span class="job-tags">
+              <span class="tag tag-time"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>Full Time</span>
+              <span class="tag tag-loc"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-7-8-7-13a7 7 0 0 1 14 0c0 5-7 13-7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>China</span>
+            </span>
+            <a href="#" class="job-view">View Job <span aria-hidden="true">→</span></a>
+          </li>
+
+          <li class="job-row reveal" data-delay="240">
+            <span class="job-title">Product designer</span>
+            <span class="job-tags">
+              <span class="tag tag-time"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>Part Time</span>
+              <span class="tag tag-loc"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-7-8-7-13a7 7 0 0 1 14 0c0 5-7 13-7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>Dubai</span>
+            </span>
+            <a href="#" class="job-view">View Job <span aria-hidden="true">→</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Pagination -->
+      <nav class="pagination reveal" aria-label="Job results pagination">
+        <button class="page-btn page-arrow" type="button" data-action="prev">Prev</button>
+        <button class="page-btn is-active" type="button" aria-current="page">1</button>
+        <button class="page-btn" type="button">2</button>
+        <button class="page-btn" type="button">3</button>
+        <span class="page-ellipsis">…</span>
+        <button class="page-btn" type="button">10</button>
+        <button class="page-btn page-arrow" type="button" data-action="next">Next</button>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ============ MORE THAN CAREERS ============ -->
+  <section class="more-careers" id="more-careers">
+    <div class="mc-watermark" aria-hidden="true"><span>JOIN US</span></div>
+
+    <div class="container">
+      <div class="mc-head">
+        <div class="pill pill-light reveal"><span class="pill-dot"></span>WHO WE LOOK FOR</div>
+        <div class="mc-headline reveal">
+          <h2>More than careers</h2>
+          <p>Join us on a quick tour—see how we work, what we value, and the moments that define us. If it feels like the right fit, explore our open roles and discover your next opportunity.</p>
+        </div>
+      </div>
+
+      <div class="mc-body">
+        <div class="mc-image reveal">
+          <img src="assets/Images/TeamPurpose.png" alt="STARTRADER team collaborating" />
+        </div>
+
+        <div class="mc-content reveal">
+          <h3>Every story matters</h3>
+          <p class="mc-lede">Everyone who lands here brings something unique.</p>
+          <p class="mc-sub">Here's what we look for in the people who choose to apply:</p>
+
+          <div class="accordion" id="mcAccordion">
+            <details class="accordion-item" open>
+              <summary>
+                <span>They bring more than a resume.</span>
+                <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="accordion-body">
+                We're not only interested in your years of experience we want to feel the energy behind your words, the stories that shaped who you are today.
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary>
+                <span>They are different and unique.</span>
+                <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="accordion-body">
+                We celebrate the perspectives, backgrounds, and ideas that don't fit a template — the kind that push the team forward in unexpected ways.
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary>
+                <span>They're ready to grow.</span>
+                <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="accordion-body">
+                Curiosity, ownership, and a learning mindset matter more than a perfect track record. If you're hungry to grow, we'll meet you there.
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY TO STARTRADER ============ -->
+  <section class="journey" id="journey">
+    <div class="container">
+      <header class="journey-head">
+        <div class="pill reveal"><span class="pill-dot"></span>OUR PROCESS</div>
+        <h2 class="journey-title reveal">Your journey to STARTRADER</h2>
+      </header>
+
+      <ol class="journey-steps">
+        <li class="journey-step reveal" data-delay="0">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 3 14 8 19 8"/>
+              <line x1="9" y1="13" x2="15" y2="13"/>
+              <line x1="9" y1="17" x2="13" y2="17"/>
+            </svg>
+          </div>
+          <h4>01. Application Submission</h4>
+          <p>Share your skills and experience by submitting your CV.</p>
+        </li>
+
+        <li class="journey-step reveal" data-delay="80">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="6"/>
+              <line x1="15.5" y1="15.5" x2="20" y2="20"/>
+              <line x1="11" y1="8" x2="11" y2="11"/>
+              <circle cx="11" cy="13.5" r="0.6" fill="currentColor"/>
+            </svg>
+          </div>
+          <h4>02. Screening &amp; Selection</h4>
+          <p>We will review your application to match your qualifications with the needs of our teams.</p>
+        </li>
+
+        <li class="journey-step reveal" data-delay="160">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="7" cy="9" r="2.5"/>
+              <path d="M3 19c0-2.5 1.8-4.5 4-4.5s4 2 4 4.5"/>
+              <circle cx="16" cy="7" r="2"/>
+              <path d="M13 14c0-1.8 1.3-3.2 3-3.2s3 1.4 3 3.2"/>
+              <line x1="16" y1="14" x2="16" y2="20"/>
+              <line x1="16" y1="17" x2="20" y2="17"/>
+            </svg>
+          </div>
+          <h4>03. Interview</h4>
+          <p>If shortlisted, you will be invited for an interview where you can showcase your strengths.</p>
+        </li>
+
+        <li class="journey-step reveal" data-delay="240">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <polyline points="3 7 12 13 21 7"/>
+            </svg>
+          </div>
+          <h4>04. Offer</h4>
+          <p>Successful candidates receive an offer and are welcomed into a world of opportunity and growth.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ WAY OF LIFE CTA ============ -->
+  <section class="final-cta" id="way-of-life">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-bg" aria-hidden="true">
+          <img src="assets/Images/footerBackground.svg" alt="" />
+        </div>
+        <div class="cta-copy">
+          <h2>STARTRADER is more than<br />a job, it's a way of life.</h2>
+          <a href="#jobs" class="btn btn-primary">Get A Glimpse</a>
+        </div>
+        <div class="cta-people">
+          <img src="assets/Images/fotterImage.png" alt="STARTRADER team members" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand" href="index.html" aria-label="STARTRADER Careers home">
+          <img src="assets/Images/StarCareerLogo.svg" alt="STARTRADER Careers" />
+        </a>
+        <div class="footer-divider"></div>
+        <ul class="footer-socials" aria-label="Social media">
+          <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.9.3-1.5 1.6-1.5H17V4.3C16.6 4.2 15.5 4 14.3 4 11.9 4 10.2 5.5 10.2 8.2v2.3H7.5v3h2.7V21h3.3z"/></svg></a></li>
+          <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <li class="social-blue"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M6.5 8.5a1.7 1.7 0 110-3.4 1.7 1.7 0 010 3.4zM5 10h3v10H5V10zm5 0h2.9v1.4h.04c.4-.75 1.4-1.55 2.86-1.55 3.06 0 3.62 2 3.62 4.7V20H16.5v-4.6c0-1.1-.02-2.5-1.55-2.5-1.55 0-1.79 1.2-1.79 2.42V20H10V10z"/></svg></a></li>
+          <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.5 3h3l-6.6 7.6L22 21h-6.1l-4.8-6.3L5.6 21H2.5l7.1-8.1L2 3h6.2l4.3 5.7L17.5 3zm-1.1 16h1.7L7.7 5H6L16.4 19z"/></svg></a></li>
+          <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M21.6 7.2c-.2-.9-.9-1.6-1.8-1.8C18.1 5 12 5 12 5s-6.1 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 9 2 12 2 12s0 3 .4 4.8c.2.9.9 1.6 1.8 1.8C5.9 19 12 19 12 19s6.1 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.8.4-4.8.4-4.8s0-3-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a></li>
+          <li><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19.5 8.5c-1.8 0-3.3-1.4-3.5-3.2V5h-3v11.2c0 1.4-1.1 2.5-2.5 2.5S8 17.6 8 16.2s1.1-2.5 2.5-2.5c.2 0 .4 0 .6.1v-3c-.2 0-.4-.05-.6-.05A5.55 5.55 0 0 0 5 16.2C5 19.3 7.5 21.7 10.5 21.7s5.5-2.5 5.5-5.5v-5.5c1 .7 2.2 1.1 3.5 1.1V8.5z"/></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <ul class="footer-links">
+          <li><a href="starscout.html" class="active">STARSCOUT</a></li>
+          <li><a href="index.html#starlife">STARLIFE</a></li>
+          <li><a href="index.html#starsocial">STARSOCIAL</a></li>
+          <li><a href="#">STARACEDEMY</a></li>
+          <li><a href="index.html#starblog">STARBLOG</a></li>
+        </ul>
+        <a href="#" class="footer-policy">PRIVACY &amp; POLICY</a>
+      </div>
+
+      <p class="copyright">©2026 STARTRADER CAREERS. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
